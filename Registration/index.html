@@ -5,38 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Modelo</title>
+  <title>Registration</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/cpfValidator.js" defer></script>
+  <script src="./assets/js/main.js" defer></script>
 </head>
 
 <body>
-  <section class="container">
-    <h1>Registration Form</h1>
-    <ul>
-      <li>No field can be empty</li>
-      <li>User can only contain letters and/or numbers</li>
-      <li>User must be between 3 and 12 characters</li>
-      <li>Password must be between 6 and 12 characters</li>
-    </ul>
 
+
+
+  <div class="container">
+
+    <div class="title">
+      <h1>Registration Form</h1>
+    </div>
+    
+    <div class="form-space">
     <form action="/" method="POST" class="form">
       <label>Name</label>
-      <input type="text" class="name validates">
+      <input type="text" class="name validates" placeholder="Type your first name">
       <label>Last name</label>
-      <input type="text" class="lastname validates">
+      <input type="text" class="lastname validates" placeholder="Type your last name">
       <label>CPF</label>
-      <input type="text" class="cpf validates">
+      <input type="text" class="cpf validates" placeholder="Write a valid one.">
       <label>User</label>
-      <input type="text" class="user validates">
+      <input type="text" class="user validates" placeholder="User must be between 3 and 12 characters">
       <label>Password</label>
-      <input type="text" class="password validates">
-      <label>Repeat Password</label>
-      <input type="text" class="repeatpassword validates">
+      <input type="password" class="password validates" placeholder="Type your password">
+      <label>Password Confirm</label>
+      <input type="password" class="repeat-password validates" placeholder="Confirm your password">
       <button type="submit">Submit</button>
-    </form>
-  </section>
 
-  <script src="./assets/js/main.js"></script>
+    </form>
+  </div>
+
+    <div class="forge">
+      <p><a href="#">Forgotten password?</a></p>
+    </div>
+  </div>
+
+
 </body>
 
 </html>

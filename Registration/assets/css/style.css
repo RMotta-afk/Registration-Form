@@ -36,6 +36,8 @@ form input {
   font-size: 24px;
   height: 50px;
   padding: 0 20px;
+  border-radius: 5px;
+
 }
 
 form input:focus {
@@ -60,4 +62,10 @@ form button:hover {
 .error-text {
   font-size: 12px;
   color: red;
+}
+
+.forge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
