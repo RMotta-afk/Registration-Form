@@ -11,6 +11,7 @@ class formValidate {
         });
     }
 
+
     // This method is useful to catch the inputs, and to send finally the form.
 
     handleSubmit(e){
